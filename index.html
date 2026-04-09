@@ -5,41 +5,48 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #faf7f9;
-      text-align: center;
+      font-family: 'Arial', sans-serif;
+      background: #fff7fa;
       margin: 0;
-      padding: 0;
+      text-align: center;
+      color: #333;
     }
 
     h1 {
       margin-top: 40px;
-      font-size: 32px;
+      font-size: 34px;
+      letter-spacing: 1px;
     }
 
     .subtitle {
-      color: #777;
+      color: #a88c9a;
       margin-bottom: 30px;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+    .section {
+      margin-top: 60px;
+    }
+
+    h2 {
+      font-weight: normal;
+      color: #d48fa3;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
     }
 
     .card {
       background: white;
       border-radius: 20px;
-      padding: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease;
+      padding: 18px;
+      box-shadow: 0 8px 20px rgba(212,143,163,0.15);
+      transition: 0.2s;
     }
 
     .card:hover {
@@ -51,29 +58,22 @@
       border-radius: 15px;
     }
 
-    h3 {
-      margin: 10px 0 5px;
-    }
-
-    p {
-      font-size: 14px;
-      color: #555;
-    }
-
     a {
-      display: inline-block;
+      display: block;
       margin-top: 10px;
-      padding: 10px 15px;
+      padding: 10px;
       border-radius: 25px;
       text-decoration: none;
-      border: 1px solid black;
+      background: #ffe4ec;
+      color: #b76e8a;
       font-size: 14px;
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 12px;
-      color: #888;
+      color: #bfa3ad;
+      padding-bottom: 30px;
     }
   </style>
 </head>
@@ -81,49 +81,159 @@
 <body>
 
 <h1>Life Edit by Anna ✨</h1>
-<p class="subtitle">Affordable + clean beauty that actually works</p>
+<p class="subtitle">Soft beauty, curated finds, and elevated everyday living</p>
 
-<div class="container">
-  <div class="grid">
+<!-- GLOW UP -->
+<div class="section">
+<h2>Glow Up Essentials ✨</h2>
 
-    <div class="card">
-  <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc" />
-  <h3>Cleanser Favorites</h3>
-  <p>Gentle, effective face washes I actually use.</p>
-
- <div style="margin-top:10px;">
-  <a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">OSEA Cleanser</a>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273">
+<p>My go-to products for clear, glowing skin</p>
+<a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">Shop Glow Up Picks</a>
+</div>
+</div>
 </div>
 
-<div style="margin-top:10px;">
-  <a href="https://amzn.to/47TBTfg" target="_blank" rel="nofollow sponsored">Gentle Daily Cleanser</a>
+<!-- SKINCARE -->
+<div class="section">
+<h2>Skincare</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Clean / Non-Toxic</h3>
+<a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">Cleanser Picks</a>
+<a href="#">Moisturizers</a>
 </div>
 
-<div style="margin-top:10px;">
-  <a href="https://amzn.to/47O47bo" target="_blank" rel="nofollow sponsored">Hydrating Face Wash</a>
+<div class="card">
+<h3>Affordable Clean</h3>
+<a href="#">Budget Skincare</a>
+<a href="#">Under $25 Favorites</a>
 </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273" />
-      <h3>Daily Moisturizer</h3>
-      <p>Lightweight glow without feeling greasy.</p>
-      <a href="https://amzn.to/41U2Uvw" target="_blank" rel="nofollow sponsored">
-        See price on Amazon →
-      </a>
-    </div>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" />
-      <h3>Retinol Serum</h3>
-      <p>Beginner-friendly and smooth results.</p>
-      <a href="https://amzn.to/3PZbd6E" target="_blank" rel="nofollow sponsored">
-        See price on Amazon →
-      </a>
-    </div>
+</div>
+</div>
 
-  </div>
+<!-- BODY -->
+<div class="section">
+<h2>Body Care</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Clean Body Care</h3>
+<a href="#">Body Wash</a>
+<a href="#">Lotions</a>
+</div>
+
+<div class="card">
+<h3>Affordable Body</h3>
+<a href="#">Budget Picks</a>
+</div>
+
+</div>
+</div>
+
+<!-- MAKEUP -->
+<div class="section">
+<h2>Makeup</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Clean Makeup</h3>
+<a href="#">Everyday Makeup</a>
+</div>
+
+<div class="card">
+<h3>Affordable Makeup</h3>
+<a href="#">Drugstore Picks</a>
+</div>
+
+</div>
+</div>
+
+<!-- HAIR -->
+<div class="section">
+<h2>Hair Care</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Hair Essentials</h3>
+<a href="#">Shampoo</a>
+<a href="#">Styling</a>
+</div>
+
+</div>
+</div>
+
+<!-- LIFESTYLE -->
+<div class="section">
+<h2>Lifestyle Finds 🛍️</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Amazon Favorites</h3>
+<a href="#">Shop My Picks</a>
+</div>
+
+<div class="card">
+<h3>Outfits + Style</h3>
+<a href="#">Shop Looks</a>
+</div>
+
+</div>
+</div>
+
+<!-- REVIEWS -->
+<div class="section">
+<h2>My Reviews ⭐</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Recent Favorites</h3>
+<a href="#">Read Reviews</a>
+</div>
+
+</div>
+</div>
+
+<!-- FINANCE -->
+<div class="section">
+<h2>Pink Room Finance 💸</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Money Tools</h3>
+<a href="#">Budget Apps</a>
+<a href="#">Finance Picks</a>
+</div>
+
+</div>
+</div>
+
+<!-- STOREFRONT -->
+<div class="section">
+<h2>Shop My Amazon Storefront</h2>
+
+<div class="grid">
+
+<div class="card">
+<a href="#">Browse All Products</a>
+</div>
+
+</div>
 </div>
 
 <footer>
+Follow me on Pinterest + TikTok 💕<br><br>
 As an Amazon Associate, I earn from qualifying purchases.
 </footer>
 
