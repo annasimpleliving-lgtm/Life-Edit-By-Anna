@@ -3,88 +3,109 @@
 <head>
   <title>Life Edit by Anna</title>
 
-  <style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background: #f9f7f6;
+  font-family: 'Inter', sans-serif;
+  background: #f5f1ee;
   margin: 0;
   text-align: center;
   color: #2c2c2c;
 }
 
 h1 {
-  margin-top: 50px;
-  font-size: 34px;
+  margin-top: 60px;
+  font-size: 38px;
+  font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
+  color: #4a3f42;
 }
 
 .subtitle {
   color: #7a6f73;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   font-size: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section {
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 h2 {
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
   color: #6e5c61;
-  letter-spacing: 1px;
+}
+
+h3 {
+  color: #4f3f42;
+  font-weight: 500;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  max-width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 .card {
-  background: #ffffff;
+  background: #fffaf8;
   border-radius: 18px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: 0.2s ease;
+  padding: 22px;
+  box-shadow: 0 15px 40px rgba(140,110,100,0.08);
+  transition: 0.25s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(140,110,100,0.12);
 }
 
 img {
   width: 100%;
   border-radius: 12px;
+  margin-bottom: 10px;
 }
 
 a {
   display: block;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 25px;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 30px;
   text-decoration: none;
-  background: #efe6e9;
-  color: #5f4d52;
+  background: #e8ddd7;
+  color: #4a3f42;
   font-size: 14px;
 }
 
+a:hover {
+  background: #d8c8c0;
+}
+
 footer {
-  margin-top: 70px;
+  margin-top: 80px;
   font-size: 12px;
   color: #8c7b80;
   padding-bottom: 40px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <h1>Life Edit by Anna ✨</h1>
-<p class="subtitle">Soft beauty, curated finds, and elevated everyday living</p>
+<p class="subtitle">
+Curated beauty, honest favorites, and elevated everyday finds
+</p>
 
 <!-- GLOW UP -->
 <div class="section">
@@ -99,61 +120,48 @@ footer {
 </div>
 </div>
 
-<!-- SKINCARE -->
+<!-- CLEAN BEAUTY -->
 <div class="section">
-<h2>Skincare</h2>
+<h2>Clean Beauty</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Clean / Non-Toxic</h3>
-<a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">Cleanser Picks</a>
+<h3>Skincare</h3>
+<a href="#">Cleanser Picks</a>
 <a href="#">Moisturizers</a>
+<a href="#">Serums</a>
 </div>
 
 <div class="card">
-<h3>Affordable Clean</h3>
-<a href="#">Budget Skincare</a>
-<a href="#">Under $25 Favorites</a>
-</div>
-
-</div>
-</div>
-
-<!-- BODY -->
-<div class="section">
-<h2>Body Care</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Clean Body Care</h3>
+<h3>Body Care</h3>
 <a href="#">Body Wash</a>
 <a href="#">Lotions</a>
 </div>
 
 <div class="card">
-<h3>Affordable Body</h3>
-<a href="#">Budget Picks</a>
+<h3>Makeup</h3>
+<a href="#">Everyday Makeup</a>
 </div>
 
 </div>
 </div>
 
-<!-- MAKEUP -->
+<!-- TRIED & TRUE -->
 <div class="section">
-<h2>Makeup</h2>
+<h2>Tried & True Favorites</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Clean Makeup</h3>
-<a href="#">Everyday Makeup</a>
+<h3>Skincare I Still Love</h3>
+<a href="#">Estee Lauder Picks</a>
+<a href="#">Daily Favorites</a>
 </div>
 
 <div class="card">
-<h3>Affordable Makeup</h3>
-<a href="#">Drugstore Picks</a>
+<h3>Makeup Staples</h3>
+<a href="#">Everyday Makeup</a>
 </div>
 
 </div>
@@ -187,7 +195,8 @@ footer {
 
 <div class="card">
 <h3>Outfits + Style</h3>
-<a href="#">Shop Looks</a>
+<a href="#">Indian Outfits</a>
+<a href="#">Everyday Looks</a>
 </div>
 
 </div>
@@ -216,7 +225,7 @@ footer {
 <div class="card">
 <h3>Money Tools</h3>
 <a href="#">Budget Apps</a>
-<a href="#">Finance Picks</a>
+<a href="#">Finance Tools</a>
 </div>
 
 </div>
@@ -235,8 +244,21 @@ footer {
 </div>
 </div>
 
+<!-- SOCIAL -->
+<div class="section">
+<h2>Follow Along</h2>
+
+<div class="grid">
+
+<div class="card">
+<a href="#">Pinterest</a>
+<a href="#">TikTok</a>
+</div>
+
+</div>
+</div>
+
 <footer>
-Follow me on Pinterest + TikTok 💕<br><br>
 As an Amazon Associate, I earn from qualifying purchases.
 </footer>
 
