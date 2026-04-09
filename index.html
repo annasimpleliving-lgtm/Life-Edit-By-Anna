@@ -2,28 +2,78 @@
 <html>
 <head>
   <title>Life Edit by Anna</title>
+
   <style>
     body {
-      font-family: Arial;
-      background: #fdf6f9;
+      font-family: Arial, sans-serif;
+      background: #faf7f9;
       text-align: center;
-      padding: 40px;
+      margin: 0;
+      padding: 0;
     }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
     .card {
       background: white;
-      padding: 20px;
-      margin: 20px auto;
       border-radius: 20px;
-      width: 300px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
     }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    h3 {
+      margin: 10px 0 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+    }
+
     a {
       display: inline-block;
       margin-top: 10px;
       padding: 10px 15px;
-      border-radius: 20px;
+      border-radius: 25px;
       text-decoration: none;
       border: 1px solid black;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 12px;
+      color: #888;
     }
   </style>
 </head>
@@ -31,35 +81,44 @@
 <body>
 
 <h1>Life Edit by Anna ✨</h1>
-<p>Affordable + clean beauty that actually works</p>
-<p>My favorite products for clear, glowing skin</p>
+<p class="subtitle">Affordable + clean beauty that actually works</p>
 
-<div class="card">
-  <h3>OSEA Cleanser</h3>
-  <p>Gentle and non-drying. I repurchase this.</p>
-  <a href="https://amzn.to/4bXDMtS" target="_blank"> rel="nofollow sponsored">
-    See price on Amazon →
-  </a>
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273" />
+      <h3>OSEA Cleanser</h3>
+      <p>Gentle and non-drying. I repurchase this.</p>
+      <a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">
+        See price on Amazon →
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" />
+      <h3>Daily Moisturizer</h3>
+      <p>Lightweight glow without feeling greasy.</p>
+      <a href="https://amzn.to/41U2Uvw" target="_blank" rel="nofollow sponsored">
+        See price on Amazon →
+      </a>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" />
+      <h3>Retinol Serum</h3>
+      <p>Beginner-friendly and smooth results.</p>
+      <a href="https://amzn.to/3PZbd6E" target="_blank" rel="nofollow sponsored">
+        See price on Amazon →
+      </a>
+    </div>
+
+  </div>
 </div>
 
-<div class="card">
-  <h3>Daily Moisturizer</h3>
-  <p>Lightweight glow without feeling greasy.</p>
-  <a href="https://amzn.to/41U2Uvw" target="_blank"> rel="nofollow sponsored">
-    See price on Amazon →
-  </a>
-</div>
-
-<div class="card">
-  <h3>Retinol Serum</h3>
-  <p>Beginner-friendly and smooth results.</p>
-  <a href="https://amzn.to/3PZbd6E" target="_blank"> rel="nofollow sponsored">
-    See price on Amazon →
-  </a>
-</div>
+<footer>
+As an Amazon Associate, I earn from qualifying purchases.
+</footer>
 
 </body>
 </html>
-<p style="font-size:12px; margin-top:40px;">
-As an Amazon Associate, I earn from qualifying purchases.
-</p>
