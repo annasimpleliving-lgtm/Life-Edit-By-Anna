@@ -7,6 +7,10 @@
 
 <style>
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -14,7 +18,7 @@ body {
   background: linear-gradient(180deg, #f8f6f4 0%, #f3eeeb 50%, #f8f6f4 100%);
 }
 
-/* NAVBAR */
+/* NAV */
 .nav {
   display: flex;
   justify-content: center;
@@ -43,10 +47,10 @@ body {
   color: #8a7c80;
 }
 
-/* SUB HEADER */
+/* INTRO */
 .intro {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 14px;
   color: #9c8e93;
 }
@@ -95,10 +99,6 @@ a {
   background: #faf8f7;
 }
 
-a:hover {
-  background: #efe7e4;
-}
-
 /* PRODUCTS */
 .products-grid {
   display: grid;
@@ -109,10 +109,6 @@ a:hover {
   padding: 20px;
 }
 
-.product-item {
-  text-align: center;
-}
-
 .product-item img {
   width: 100%;
   height: 160px;
@@ -120,6 +116,10 @@ a:hover {
   background: white;
   border-radius: 12px;
   padding: 10px;
+}
+
+.product-item {
+  text-align: center;
 }
 
 /* DISCLAIMER */
@@ -145,101 +145,4 @@ footer {
 
 <!-- NAV -->
 <div class="nav">
-<a href="#">Skincare</a>
-<a href="#">Makeup</a>
-<a href="#">Body</a>
-<a href="#">Fragrance</a>
-<a href="#">Finance</a>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-<h1>Life Edit by Anna ✨</h1>
-<p>Clean beauty, real results, and curated essentials for an elevated everyday routine.</p>
-</div>
-
-<div class="intro">
-Curated edits for skincare, beauty, lifestyle and modern finances.
-</div>
-
-<!-- BROWSE -->
-<div class="section-title">
-<h2>Browse</h2>
-</div>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273">
-<p>Skincare</p>
-<a href="#">Shop</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1583001809873-a128495da465">
-<p>Makeup</p>
-<a href="#">Shop</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
-<p>Body Care</p>
-<a href="#">Shop</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15">
-<p>Fragrance</p>
-<a href="#">Shop</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
-<p>Funky Finance 💸</p>
-<a href="#">Explore</a>
-</div>
-
-</div>
-
-<div class="disclaimer">
-As an Amazon Associate, I earn from qualifying purchases.
-</div>
-
-<!-- MAKEUP -->
-<div class="section-title">
-<h2>Makeup Favorites</h2>
-</div>
-
-<div class="products-grid">
-
-<div class="product-item">
-<img src="https://m.media-amazon.com/images/I/41zfRk44tNL._SY300_.jpg">
-<p>Saie Bronzer</p>
-<a href="https://amzn.to/41sMCtq">Shop</a>
-</div>
-
-<div class="product-item">
-<img src="https://m.media-amazon.com/images/I/41NkDGQX3-L._SY300_.jpg">
-<p>Saie Glowy Gel</p>
-<a href="https://amzn.to/4t7vd5O">Shop</a>
-</div>
-
-<div class="product-item">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
-<p>Ilia Lip Crayon</p>
-<a href="https://amzn.to/4sudgNB">Shop</a>
-</div>
-
-</div>
-
-<div class="disclaimer">
-This section may contain affiliate links.
-</div>
-
-<!-- FOOTER -->
-<footer>
-Follow on Pinterest + TikTok
-</footer>
-
-</body>
-</html>
+<a href
