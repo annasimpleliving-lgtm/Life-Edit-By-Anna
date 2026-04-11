@@ -1,36 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Life Edit by Anna</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  color: #2b2b2b;
+  background: linear-gradient(180deg, #f8f6f4 0%, #f3eeeb 50%, #f8f6f4 100%);
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  font-size: 13px;
+}
+.nav a { text-decoration: none; color: #6b5c61; }
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 50px 20px 20px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+}
+.hero p { color: #8a7c80; }
+
+/* SECTION */
+.section-title {
+  text-align: center;
+  margin-top: 70px;
+}
+.section-title h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* CATEGORY GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* BUTTON */
+a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #5a4a4f;
+  border: 1px solid #e5dede;
+  background: #faf8f7;
+}
+
+/* PRODUCTS */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.product-item {
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* fragrance fix */
+.fragrance img {
+  height: 220px;
+}
+
+/* DISCLAIMER */
+.disclaimer {
+  text-align: center;
+  font-size: 11px;
+  color: #a89a9e;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 60px;
+  font-size: 12px;
+  color: #8c7b80;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+<a href="#browse">Browse</a>
+<a href="#clean">Clean</a>
+<a href="#makeup">Makeup</a>
+<a href="#fragrance">Fragrance</a>
+<a href="#lifestyle">Lifestyle</a>
+<a href="#kitchen">Kitchen</a>
+<a href="#finance">Finance</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<h1>Life Edit by Anna ✨</h1>
+<p>Clean beauty, real results, and curated essentials for an elevated everyday routine.</p>
+</div>
+
+<!-- BROWSE -->
+<div class="section-title" id="browse">
+<h2>Browse</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/c6/e6/fb/c6e6fbd4176bb432b31058924eee19f3.jpg">
+<p>Skincare</p>
+<a href="#clean">Shop</a>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/1200x/13/81/3b/13813bf4c3518c331d6067b348ed8ca7.jpg">
+<p>Makeup</p>
+<a href="#makeup">Shop</a>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/6b/bb/3f/6bbb3f00e52e06e101be61ad4cadf411.jpg">
+<p>Body</p>
+<a href="#lifestyle">Shop</a>
+</div>
+
+</div>
+
+<div class="disclaimer">As an Amazon Associate, I earn from qualifying purchases.</div>
+
+<!-- CLEAN MAKEUP -->
+<div class="section-title" id="clean">
+<h2>Clean Beauty Makeup</h2>
+</div>
+
+<div class="products-grid">
+
+<div class="product-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
+<p>Ilia Lip Crayon</p>
+<a href="https://amzn.to/4sudgNB">Shop</a>
+</div>
+
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/615uljkhrkL._AC_UF350.jpg">
+<p>Ilia Complexion Stick</p>
+<a href="https://amzn.to/3QwXrZ4">Shop</a>
+</div>
+
+</div>
+
+<!-- MAKEUP -->
+<div class="section-title" id="makeup">
+<h2>Tried & True Makeup</h2>
+</div>
+
+<div class="products-grid">
+
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/41zfRk44tNL._SY300_.jpg">
+<p>Saie Bronzer</p>
+<a href="https://amzn.to/41sMCtq">Shop</a>
+</div>
+
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/41NkDGQX3-L._SY300_.jpg">
+<p>Saie Glowy Gel</p>
+<a href="https://amzn.to/4t7vd5O">Shop</a>
+</div>
+
+</div>
+
+<!-- FRAGRANCE -->
+<div class="section-title" id="fragrance">
+<h2>Fragrance</h2>
+</div>
+
+<div class="products-grid">
+
+<div class="product-item fragrance">
+<img src="https://i.pinimg.com/736x/6c/06/f7/6c06f7d73d516f9b1faa8c3c21a9da3a.jpg">
+<p>Chanel Chance Eau Vive</p>
+<a href="https://amzn.to/4eh4XRL">Shop</a>
+</div>
+
+</div>
+
+<!-- LIFESTYLE -->
+<div class="section-title" id="lifestyle">
+<h2>Lifestyle</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/1f/8d/3c/1f8d3c6b3c8c61a8c8cbe3c5b0dca8a0.jpg">
+<p>Fashion</p>
+<a href="#">Shop</a>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/9c/0a/4d/9c0a4df9e5a13a7d0f3bfb79f3a77c6d.jpg">
+<p>Home</p>
+<a href="#">Shop</a>
+</div>
+
+</div>
+
+<!-- KITCHEN -->
 <div class="section-title" id="kitchen">
 <h2>Non-Toxic Kitchen Essentials</h2>
-<p>Everyday swaps for a cleaner home</p>
 </div>
 
 <div class="products-grid">
 
 <div class="product-item">
 <img src="https://i.pinimg.com/736x/89/6a/54/896a5429d5f58cb8c61e7a2c9cb9e28d.jpg">
-<p>Glass Food Storage</p>
+<p>Glass Storage</p>
 <a href="#">Shop</a>
 </div>
 
 <div class="product-item">
 <img src="https://i.pinimg.com/736x/2c/3d/0a/2c3d0a5f9a4d3b7dfb0a5f8f6e3d2a8a.jpg">
-<p>Wood Cutting Boards</p>
+<p>Wood Boards</p>
 <a href="#">Shop</a>
 </div>
 
-<div class="product-item">
-<img src="https://i.pinimg.com/736x/9a/61/f3/9a61f34d1cfe1b91f1d8a4c9dce0f9b2.jpg">
-<p>Non-Toxic Cookware</p>
-<a href="#">Shop</a>
 </div>
 
-<div class="product-item">
-<img src="https://i.pinimg.com/736x/74/f3/3a/74f33a4e2a7c9e3e9b4e6a3c2b9c1f2d.jpg">
-<p>Reusable Kitchen Towels</p>
-<a href="#">Shop</a>
-</div>
-
+<!-- FINANCE -->
+<div class="section-title" id="finance">
+<h2>Funky Finance 💸</h2>
 </div>
 
 <div class="disclaimer">
-This section contains affiliate links.
+Finance tools coming soon.
 </div>
+
+<!-- FOOTER -->
+<footer>
+Follow on Pinterest + TikTok
+</footer>
+
+</body>
+</html>
