@@ -9,9 +9,9 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #f5f1ee;
+  background: #f8f6f4;
   margin: 0;
-  color: #2c2c2c;
+  color: #2b2b2b;
 }
 
 /* HERO */
@@ -23,50 +23,74 @@ body {
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
-  color: #4a3f42;
+  color: #3f3538;
 }
 
 .hero p {
   max-width: 520px;
   margin: 20px auto;
-  color: #7a6f73;
+  color: #8a7c80;
   line-height: 1.7;
 }
 
-/* SPLIT SECTION */
+/* SPLIT */
 .split {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   max-width: 1100px;
-  margin: 80px auto;
-  gap: 50px;
+  margin: 110px auto;
+  gap: 80px;
   padding: 20px;
 }
 
 .split img {
   flex: 1;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px;
 }
 
 .split-text {
   flex: 1;
-  text-align: left;
 }
 
 .split-text h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: #4a3f42;
+  font-size: 32px;
+  color: #3f3538;
+}
+
+.split-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #5a4a4f;
 }
 
 .split-text p {
-  color: #7a6f73;
-  margin-bottom: 15px;
+  color: #8a7c80;
 }
-/* PRODUCTS GRID (NEW) */
+
+/* BUTTON */
+a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #5a4a4f;
+  font-size: 13px;
+  border: 1px solid #e5dede;
+  background: #faf8f7;
+  transition: all 0.25s ease;
+}
+
+a:hover {
+  background: #efe7e4;
+  transform: translateY(-2px);
+}
+
+/* PRODUCT GRID */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -74,64 +98,43 @@ body {
   margin-top: 25px;
 }
 
+.product-item {
+  text-align: center;
+  padding: 14px;
+  border-radius: 18px;
+  transition: all 0.25s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-6px);
+  background: #faf8f7;
+}
 
 .product-item img {
   width: 100%;
   height: 180px;
   object-fit: contain;
-  background: #fff;
-  padding: 10px;
-  border-radius: 12px;
-}
-  .product-item {
-  text-align: center;
-  transition: transform 0.2s ease;
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
 }
 
-.product-item:hover {
-  transform: translateY(-5px);
-}
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 35px;
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-/* LINKS */
-a {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 8px 14px;
-  border-radius: 20px;
-  text-decoration: none;
-  color: #5a4a4f;
+.product-item p {
   font-size: 13px;
-  border: 1px solid #ddd;
+  margin: 6px 0;
 }
 
-a:hover {
-  background: #eee5e1;
-}
-
-/* SECTION TITLE */
+/* SECTION */
 .section-title {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .section-title h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  color: #4a3f42;
+  font-size: 30px;
+  color: #3f3538;
 }
 
 .section-title p {
@@ -139,10 +142,25 @@ a:hover {
   font-size: 13px;
 }
 
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
   font-size: 12px;
   color: #8c7b80;
 }
@@ -156,31 +174,31 @@ footer {
 <div class="hero">
   <h1>Life Edit by Anna ✨</h1>
   <p>
-    Curated beauty, honest favorites, and elevated everyday essentials for a soft, intentional life.
+    Clean beauty, real results, and curated essentials for an elevated everyday routine.
   </p>
 </div>
 
-<!-- GLOW UP (FEATURE SECTION) -->
+<!-- GLOW UP -->
 <div class="split">
-  <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273">
-  
+  <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc">
+
   <div class="split-text">
     <h2>Glow Up Essentials</h2>
-    <p>Start here — my go-to products for clear, glowing skin.</p>
-    <a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">Shop picks</a>
+    <p>Your simple starting point for clear, glowing skin.</p>
+    <a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">Shop routine</a>
   </div>
 </div>
 
 <!-- CLEAN BEAUTY -->
 <div class="section-title">
   <h2>Clean Beauty</h2>
-  <p>Non-toxic, intentional picks</p>
+  <p>Non-toxic, intentional skincare</p>
 </div>
 
 <div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc">
+<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
 <p>Skincare</p>
 <a href="#">Cleansers</a>
 <a href="#">Moisturizers</a>
@@ -193,9 +211,11 @@ footer {
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+<img src="https://images.unsplash.com/photo-1583001809873-a128495da465">
 <p>Makeup</p>
 <a href="#">Everyday Picks</a>
+</div>
+
 </div>
 
 <!-- TRIED & TRUE -->
@@ -237,9 +257,26 @@ footer {
 
   </div>
 
-  <img src="https://m.media-amazon.com/images/I/31FZEfSr3VL._SY300_SX300_QL70_FMwebp_.jpg">
+  <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15">
 
 </div>
+
+<!-- FRAGRANCE -->
+<div class="section-title">
+  <h2>Fragrance</h2>
+  <p>Signature scents I love</p>
+</div>
+
+<div class="products-grid" style="max-width:600px;margin:auto;">
+
+  <div class="product-item">
+    <img src="https://m.media-amazon.com/images/I/51LzL4pfamL.jpg">
+    <p>Chanel Chance Eau Vive</p>
+    <a href="https://amzn.to/4eh4XRL" target="_blank" rel="nofollow sponsored">Shop</a>
+  </div>
+
+</div>
+
 <!-- LIFESTYLE -->
 <div class="section-title">
   <h2>Lifestyle Finds</h2>
