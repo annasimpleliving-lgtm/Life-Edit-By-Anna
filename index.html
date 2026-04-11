@@ -75,18 +75,21 @@ body {
 }
 
 
-.product-item {
-  text-align: center;
-}
-
 .product-item img {
   width: 100%;
-  border-radius: 10px;
+  height: 180px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+}
+  .product-item {
+  text-align: center;
+  transition: transform 0.2s ease;
 }
 
-.product-item p {
-  font-size: 13px;
-  margin: 6px 0;
+.product-item:hover {
+  transform: translateY(-5px);
 }
 /* GRID */
 .grid {
