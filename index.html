@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Life Edit by Anna</title>
+<title>Life Edit by Anna</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
@@ -14,135 +14,40 @@ body {
   color: #2b2b2b;
 }
 
-/* HERO */
+/* HERO (smaller now) */
 .hero {
-  padding: 140px 20px 100px;
+  padding: 60px 20px 30px;
   text-align: center;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  color: #3f3538;
+  font-size: 44px;
 }
 
 .hero p {
   max-width: 520px;
-  margin: 20px auto;
+  margin: 10px auto;
   color: #8a7c80;
-  line-height: 1.7;
-}
-
-/* SPLIT */
-.split {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1100px;
-  margin: 110px auto;
-  gap: 80px;
-  padding: 20px;
-}
-
-.split img {
-  flex: 1;
-  width: 100%;
-  border-radius: 16px;
-}
-
-.split-text {
-  flex: 1;
-}
-
-.split-text h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  color: #3f3538;
-}
-
-.split-text h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  margin-top: 20px;
-  color: #5a4a4f;
-}
-
-.split-text p {
-  color: #8a7c80;
-}
-
-/* BUTTON */
-a {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 10px 18px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #5a4a4f;
-  font-size: 13px;
-  border: 1px solid #e5dede;
-  background: #faf8f7;
-  transition: all 0.25s ease;
-}
-
-a:hover {
-  background: #efe7e4;
-  transform: translateY(-2px);
-}
-
-/* PRODUCT GRID */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 30px;
-  margin-top: 25px;
-}
-
-.product-item {
-  text-align: center;
-  padding: 14px;
-  border-radius: 18px;
-  transition: all 0.25s ease;
-}
-
-.product-item:hover {
-  transform: translateY(-6px);
-  background: #faf8f7;
-}
-
-.product-item img {
-  width: 100%;
-  height: 180px;
-  object-fit: contain;
-  background: #ffffff;
-  padding: 14px;
-  border-radius: 14px;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.04);
-}
-
-.product-item p {
-  font-size: 13px;
-  margin: 6px 0;
 }
 
 /* SECTION */
 .section-title {
   text-align: center;
-  margin-top: 110px;
+  margin-top: 80px;
 }
 
 .section-title h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  color: #3f3538;
+  font-size: 28px;
 }
 
 .section-title p {
-  color: #9c8e93;
   font-size: 13px;
+  color: #9c8e93;
 }
 
-/* GRID */
+/* CATEGORY GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -157,10 +62,75 @@ a:hover {
   border-radius: 16px;
 }
 
+/* BUTTON */
+a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #5a4a4f;
+  font-size: 13px;
+  border: 1px solid #e5dede;
+  background: #faf8f7;
+}
+
+a:hover {
+  background: #efe7e4;
+}
+
+/* SPLIT */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin: 90px auto;
+  gap: 60px;
+  padding: 20px;
+}
+
+.split img {
+  flex: 1;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.split-text {
+  flex: 1;
+}
+
+/* PRODUCTS */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.product-item {
+  text-align: center;
+  padding: 14px;
+  border-radius: 16px;
+}
+
+.product-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #fff;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.product-item:hover {
+  transform: translateY(-4px);
+}
+
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px;
   font-size: 12px;
   color: #8c7b80;
 }
@@ -172,143 +142,109 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Life Edit by Anna ✨</h1>
-  <p>
-    Clean beauty, real results, and curated essentials for an elevated everyday routine.
-  </p>
+<h1>Life Edit by Anna ✨</h1>
+<p>Clean beauty, real results, and curated essentials for an elevated everyday routine.</p>
 </div>
 
-<!-- GLOW UP -->
-<div class="split">
-  <img src="https://i.pinimg.com/1200x/77/d6/e9/77d6e9f51ac382ab7b90552b8c57e903.jpg">
-
-  <div class="split-text">
-    <h2>Glow Up Essentials</h2>
-    <p>Your simple starting point for clear, glowing skin.</p>
-    <a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">Shop routine</a>
-  </div>
-</div>
-
-<!-- CLEAN BEAUTY -->
+<!-- CATEGORIES FIRST -->
 <div class="section-title">
-  <h2>Clean Beauty</h2>
-  <p>Non-toxic, intentional skincare</p>
+<h2>Browse</h2>
 </div>
 
 <div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+<img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273">
 <p>Skincare</p>
-<a href="#">Cleansers</a>
-<a href="#">Moisturizers</a>
+<a href="#">Shop Skincare</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
 <p>Body Care</p>
-<a href="#">Body Wash</a>
+<a href="#">Shop Body</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1583001809873-a128495da465">
 <p>Makeup</p>
-<a href="#">Everyday Picks</a>
+<a href="#">Shop Makeup</a>
 </div>
 
 </div>
 
-<!-- TRIED & TRUE -->
+<!-- GLOW UP -->
 <div class="split">
+<img src="https://i.pinimg.com/736x/47/1c/e6/471ce695183e8d714dd7e6b597b3adc2.jpg">
 
-  <div class="split-text">
-    <h2>Tried & True Favorites</h2>
-    <p>Not everything I use is perfectly clean — these still work.</p>
+<div class="split-text">
+<h2>Glow Up Essentials</h2>
+<p>Your simple starting point for clear, glowing skin.</p>
+<a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">Shop routine</a>
+</div>
+</div>
 
-    <h3>Makeup Favorites</h3>
+<!-- MAKEUP -->
+<div class="section-title">
+<h2>Makeup Favorites</h2>
+</div>
 
-    <div class="products-grid">
+<div class="products-grid">
 
-      <div class="product-item">
-        <img src="https://m.media-amazon.com/images/I/41zfRk44tNL._SY300_SX300_QL70_FMwebp_.jpg">
-        <p>Saie Bronzer</p>
-        <a href="https://amzn.to/41sMCtq" target="_blank" rel="nofollow sponsored">Shop</a>
-      </div>
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/41zfRk44tNL._SY300_.jpg">
+<p>Saie Bronzer</p>
+<a href="https://amzn.to/41sMCtq" target="_blank" rel="nofollow sponsored">Shop</a>
+</div>
 
-      <div class="product-item">
-        <img src="https://m.media-amazon.com/images/I/41NkDGQX3-L._SY300_SX300_QL70_FMwebp_.jpg">
-        <p>Saie Glowy Gel</p>
-        <a href="https://amzn.to/4t7vd5O" target="_blank" rel="nofollow sponsored">Shop</a>
-      </div>
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/41NkDGQX3-L._SY300_.jpg">
+<p>Saie Glowy Gel</p>
+<a href="https://amzn.to/4t7vd5O" target="_blank" rel="nofollow sponsored">Shop</a>
+</div>
 
-      <div class="product-item">
-        <img src="https://m.media-amazon.com/images/I/41AARtOW-1L._SY300_SX300_QL70_FMwebp_.jpg">
-        <p>Saie Blush</p>
-        <a href="https://amzn.to/41rFjlO" target="_blank" rel="nofollow sponsored">Shop</a>
-      </div>
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/41AARtOW-1L._SY300_.jpg">
+<p>Saie Blush</p>
+<a href="https://amzn.to/41rFjlO" target="_blank" rel="nofollow sponsored">Shop</a>
+</div>
 
-      <div class="product-item">
-        <img src="https://m.media-amazon.com/images/I/319ru7gdvXL._SY300_SX300_QL70_FMwebp_.jpg">
-        <p>Kosas Brow Tint</p>
-        <a href="https://amzn.to/4chRmap" target="_blank" rel="nofollow sponsored">Shop</a>
-      </div>
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/319ru7gdvXL._SY300_.jpg">
+<p>Kosas Brow Tint</p>
+<a href="https://amzn.to/4chRmap" target="_blank" rel="nofollow sponsored">Shop</a>
+</div>
 
-    </div>
+<div class="product-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
+<p>Ilia Lip Crayon (Genre)</p>
+<a href="https://amzn.to/4sudgNB" target="_blank" rel="nofollow sponsored">Shop</a>
+</div>
 
-  </div>
+<div class="product-item">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
+<p>Ilia Lip Crayon (Banquette)</p>
+<a href="https://amzn.to/4vnRBt5" target="_blank" rel="nofollow sponsored">Shop</a>
+</div>
 
-  <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15">
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/615uljkhrkL._AC_UF350,350_QL80_.jpg">
+<p>Ilia Complexion Stick</p>
+<a href="https://amzn.to/3QwXrZ4" target="_blank" rel="nofollow sponsored">Shop</a>
+</div>
 
 </div>
 
 <!-- FRAGRANCE -->
 <div class="section-title">
-  <h2>Fragrance</h2>
-  <p>Signature scents I love</p>
+<h2>Fragrance</h2>
 </div>
 
-<div class="products-grid" style="max-width:600px;margin:auto;">
-
-  <div class="product-item">
-    <img src="https://m.media-amazon.com/images/I/51LzL4pfamL.jpg">
-    <p>Chanel Chance Eau Vive</p>
-    <a href="https://amzn.to/4eh4XRL" target="_blank" rel="nofollow sponsored">Shop</a>
-  </div>
-
-</div>
-
-<!-- LIFESTYLE -->
-<div class="section-title">
-  <h2>Lifestyle Finds</h2>
-  <p>Curated everyday favorites</p>
-</div>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
-<p>Amazon Finds</p>
-<a href="#">Shop</a>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1520975922071-a48c79a7d70a">
-<p>Style</p>
-<a href="#">Outfits</a>
-</div>
-
-</div>
-
-<!-- FINANCE -->
-<div class="section-title">
-  <h2>Pink Room Finance</h2>
-</div>
-
-<div class="grid">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
-<p>Money Tools</p>
-<a href="#">Explore</a>
+<div class="products-grid" style="max-width:500px;margin:auto;">
+<div class="product-item">
+<img src="https://m.media-amazon.com/images/I/51LzL4pfamL.jpg">
+<p>Chanel Chance Eau Vive</p>
+<a href="https://amzn.to/4eh4XRL" target="_blank" rel="nofollow sponsored">Shop</a>
 </div>
 </div>
 
