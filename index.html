@@ -9,49 +9,63 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #f8f6f4;
   margin: 0;
   color: #2b2b2b;
+  background: linear-gradient(180deg, #f8f6f4 0%, #f3eeeb 50%, #f8f6f4 100%);
 }
 
-/* HERO (smaller now) */
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #6b5c61;
+}
+
+/* HERO */
 .hero {
-  padding: 60px 20px 30px;
+  padding: 50px 20px 20px;
   text-align: center;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 44px;
+  font-size: 42px;
 }
 
 .hero p {
-  max-width: 520px;
-  margin: 10px auto;
   color: #8a7c80;
+}
+
+/* SUB HEADER */
+.intro {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #9c8e93;
 }
 
 /* SECTION */
 .section-title {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .section-title h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
-}
-
-.section-title p {
-  font-size: 13px;
-  color: #9c8e93;
 }
 
 /* CATEGORY GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
+  gap: 30px;
   max-width: 1100px;
   margin: auto;
   padding: 20px;
@@ -59,7 +73,13 @@ body {
 
 .card img {
   width: 100%;
+  height: 220px;
+  object-fit: cover;
   border-radius: 16px;
+}
+
+.card {
+  text-align: center;
 }
 
 /* BUTTON */
@@ -79,58 +99,41 @@ a:hover {
   background: #efe7e4;
 }
 
-/* SPLIT */
-.split {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1100px;
-  margin: 90px auto;
-  gap: 60px;
-  padding: 20px;
-}
-
-.split img {
-  flex: 1;
-  width: 100%;
-  border-radius: 16px;
-}
-
-.split-text {
-  flex: 1;
-}
-
 /* PRODUCTS */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 30px;
-  margin-top: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
 
 .product-item {
   text-align: center;
-  padding: 14px;
-  border-radius: 16px;
 }
 
 .product-item img {
   width: 100%;
-  height: 180px;
+  height: 160px;
   object-fit: contain;
-  background: #fff;
-  padding: 14px;
-  border-radius: 14px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
 }
 
-.product-item:hover {
-  transform: translateY(-4px);
+/* DISCLAIMER */
+.disclaimer {
+  text-align: center;
+  font-size: 11px;
+  color: #a89a9e;
+  margin-top: 10px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 80px;
+  padding: 60px;
   font-size: 12px;
   color: #8c7b80;
 }
@@ -140,13 +143,26 @@ footer {
 
 <body>
 
+<!-- NAV -->
+<div class="nav">
+<a href="#">Skincare</a>
+<a href="#">Makeup</a>
+<a href="#">Body</a>
+<a href="#">Fragrance</a>
+<a href="#">Finance</a>
+</div>
+
 <!-- HERO -->
 <div class="hero">
 <h1>Life Edit by Anna ✨</h1>
 <p>Clean beauty, real results, and curated essentials for an elevated everyday routine.</p>
 </div>
 
-<!-- CATEGORIES FIRST -->
+<div class="intro">
+Curated edits for skincare, beauty, lifestyle and modern finances.
+</div>
+
+<!-- BROWSE -->
 <div class="section-title">
 <h2>Browse</h2>
 </div>
@@ -154,34 +170,39 @@ footer {
 <div class="grid">
 
 <div class="card">
-<img src="https://i.pinimg.com/736x/c6/e6/fb/c6e6fbd4176bb432b31058924eee19f3.jpg">
+<img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273">
 <p>Skincare</p>
-<a href="#">Shop Skincare</a>
+<a href="#">Shop</a>
 </div>
 
 <div class="card">
-<img src="https://i.pinimg.com/736x/6b/bb/3f/6bbb3f00e52e06e101be61ad4cadf411.jpg">
-<p>Body Care</p>
-<a href="#">Shop Body</a>
-</div>
-
-<div class="card">
-<img src="https://i.pinimg.com/1200x/13/81/3b/13813bf4c3518c331d6067b348ed8ca7.jpg">
+<img src="https://images.unsplash.com/photo-1583001809873-a128495da465">
 <p>Makeup</p>
-<a href="#">Shop Makeup</a>
+<a href="#">Shop</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+<p>Body Care</p>
+<a href="#">Shop</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15">
+<p>Fragrance</p>
+<a href="#">Shop</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f">
+<p>Funky Finance 💸</p>
+<a href="#">Explore</a>
 </div>
 
 </div>
 
-<!-- GLOW UP -->
-<div class="split">
-<img src="https://i.pinimg.com/1200x/57/14/c9/5714c9fd5448b885c2141430c14c178c.jpg">
-
-<div class="split-text">
-<h2>Glow Up Essentials</h2>
-<p>Your simple starting point for clear, glowing skin.</p>
-<a href="https://amzn.to/4bXDMtS" target="_blank" rel="nofollow sponsored">Shop routine</a>
-</div>
+<div class="disclaimer">
+As an Amazon Associate, I earn from qualifying purchases.
 </div>
 
 <!-- MAKEUP -->
@@ -194,64 +215,30 @@ footer {
 <div class="product-item">
 <img src="https://m.media-amazon.com/images/I/41zfRk44tNL._SY300_.jpg">
 <p>Saie Bronzer</p>
-<a href="https://amzn.to/41sMCtq" target="_blank" rel="nofollow sponsored">Shop</a>
+<a href="https://amzn.to/41sMCtq">Shop</a>
 </div>
 
 <div class="product-item">
 <img src="https://m.media-amazon.com/images/I/41NkDGQX3-L._SY300_.jpg">
 <p>Saie Glowy Gel</p>
-<a href="https://amzn.to/4t7vd5O" target="_blank" rel="nofollow sponsored">Shop</a>
-</div>
-
-<div class="product-item">
-<img src="https://m.media-amazon.com/images/I/41AARtOW-1L._SY300_.jpg">
-<p>Saie Blush</p>
-<a href="https://amzn.to/41rFjlO" target="_blank" rel="nofollow sponsored">Shop</a>
-</div>
-
-<div class="product-item">
-<img src="https://m.media-amazon.com/images/I/319ru7gdvXL._SY300_.jpg">
-<p>Kosas Brow Tint</p>
-<a href="https://amzn.to/4chRmap" target="_blank" rel="nofollow sponsored">Shop</a>
+<a href="https://amzn.to/4t7vd5O">Shop</a>
 </div>
 
 <div class="product-item">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
-<p>Ilia Lip Crayon (Genre)</p>
-<a href="https://amzn.to/4sudgNB" target="_blank" rel="nofollow sponsored">Shop</a>
-</div>
-
-<div class="product-item">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
-<p>Ilia Lip Crayon (Banquette)</p>
-<a href="https://amzn.to/4vnRBt5" target="_blank" rel="nofollow sponsored">Shop</a>
-</div>
-
-<div class="product-item">
-<img src="https://m.media-amazon.com/images/I/615uljkhrkL._AC_UF350,350_QL80_.jpg">
-<p>Ilia Complexion Stick</p>
-<a href="https://amzn.to/3QwXrZ4" target="_blank" rel="nofollow sponsored">Shop</a>
+<p>Ilia Lip Crayon</p>
+<a href="https://amzn.to/4sudgNB">Shop</a>
 </div>
 
 </div>
 
-<!-- FRAGRANCE -->
-<div class="section-title">
-<h2>Fragrance</h2>
-</div>
-
-<div class="products-grid" style="max-width:500px;margin:auto;">
-<div class="product-item">
-<img src="https://i.pinimg.com/736x/6c/06/f7/6c06f7d73d516f9b1faa8c3c21a9da3a.jpg">
-<p>Chanel Chance Eau Vive</p>
-<a href="https://amzn.to/4eh4XRL" target="_blank" rel="nofollow sponsored">Shop</a>
-</div>
+<div class="disclaimer">
+This section may contain affiliate links.
 </div>
 
 <!-- FOOTER -->
 <footer>
-Follow on Pinterest + TikTok<br><br>
-As an Amazon Associate, I earn from qualifying purchases.
+Follow on Pinterest + TikTok
 </footer>
 
 </body>
