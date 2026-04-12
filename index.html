@@ -20,10 +20,11 @@ body {
 .nav {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   padding: 20px;
   font-size: 13px;
 }
+
 .nav a { text-decoration: none; color: #6b5c61; }
 
 /* HERO */
@@ -31,10 +32,12 @@ body {
   text-align: center;
   padding: 50px 20px 20px;
 }
+
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 42px;
 }
+
 .hero p { color: #8a7c80; }
 
 /* SECTION */
@@ -42,11 +45,18 @@ body {
   text-align: center;
   margin-top: 70px;
 }
+
 .section-title h2 {
   font-family: 'Playfair Display', serif;
 }
 
-/* CATEGORY GRID */
+.section-sub {
+  text-align: center;
+  font-size: 13px;
+  color: #8a7c80;
+}
+
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -63,19 +73,6 @@ body {
   border-radius: 16px;
 }
 
-/* BUTTON */
-a {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 10px 18px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 13px;
-  color: #5a4a4f;
-  border: 1px solid #e5dede;
-  background: #faf8f7;
-}
-
 /* PRODUCTS */
 .products-grid {
   display: grid;
@@ -84,10 +81,6 @@ a {
   max-width: 1100px;
   margin: auto;
   padding: 20px;
-}
-
-.product-item {
-  text-align: center;
 }
 
 .product-item img {
@@ -99,9 +92,21 @@ a {
   padding: 10px;
 }
 
-/* fragrance fix */
-.fragrance img {
-  height: 220px;
+.product-item { text-align: center; }
+
+.fragrance img { height: 220px; }
+
+/* BUTTON */
+a {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #5a4a4f;
+  border: 1px solid #e5dede;
+  background: #faf8f7;
 }
 
 /* DISCLAIMER */
@@ -127,8 +132,9 @@ footer {
 <!-- NAV -->
 <div class="nav">
 <a href="#browse">Browse</a>
-<a href="#clean">Clean</a>
 <a href="#makeup">Makeup</a>
+<a href="#body">Body</a>
+<a href="#hair">Hair</a>
 <a href="#fragrance">Fragrance</a>
 <a href="#lifestyle">Lifestyle</a>
 <a href="#kitchen">Kitchen</a>
@@ -151,28 +157,43 @@ footer {
 <div class="card">
 <img src="https://i.pinimg.com/736x/c6/e6/fb/c6e6fbd4176bb432b31058924eee19f3.jpg">
 <p>Skincare</p>
-<a href="#clean">Shop</a>
+<a href="#">Explore</a>
 </div>
 
 <div class="card">
 <img src="https://i.pinimg.com/1200x/13/81/3b/13813bf4c3518c331d6067b348ed8ca7.jpg">
 <p>Makeup</p>
-<a href="#makeup">Shop</a>
+<a href="#makeup">Explore</a>
 </div>
 
 <div class="card">
 <img src="https://i.pinimg.com/736x/6b/bb/3f/6bbb3f00e52e06e101be61ad4cadf411.jpg">
-<p>Body</p>
-<a href="#lifestyle">Shop</a>
+<p>Body Care</p>
+<a href="#body">Explore</a>
+</div>
+
+<div class="card">
+<img src="https://i.pinimg.com/736x/cc/8e/9b/cc8e9bbdbe93c3b0f8a9f2a63f18c21e.jpg">
+<p>Hair</p>
+<a href="#hair">Explore</a>
 </div>
 
 </div>
 
 <div class="disclaimer">As an Amazon Associate, I earn from qualifying purchases.</div>
 
-<!-- CLEAN MAKEUP -->
-<div class="section-title" id="clean">
-<h2>Clean Beauty Makeup</h2>
+<!-- MAKEUP -->
+<div class="section-title" id="makeup">
+<h2>Makeup</h2>
+</div>
+
+<div class="section-sub">
+Clean beauty and tried-and-true favorites curated intentionally.
+</div>
+
+<!-- CLEAN -->
+<div class="section-title">
+<h2>Clean Beauty</h2>
 </div>
 
 <div class="products-grid">
@@ -191,9 +212,9 @@ footer {
 
 </div>
 
-<!-- MAKEUP -->
-<div class="section-title" id="makeup">
-<h2>Tried & True Makeup</h2>
+<!-- TRIED -->
+<div class="section-title">
+<h2>Tried & True</h2>
 </div>
 
 <div class="products-grid">
@@ -218,64 +239,21 @@ footer {
 </div>
 
 <div class="products-grid">
-
 <div class="product-item fragrance">
 <img src="https://i.pinimg.com/736x/6c/06/f7/6c06f7d73d516f9b1faa8c3c21a9da3a.jpg">
 <p>Chanel Chance Eau Vive</p>
 <a href="https://amzn.to/4eh4XRL">Shop</a>
 </div>
-
 </div>
 
-<!-- LIFESTYLE -->
-<div class="section-title" id="lifestyle">
-<h2>Lifestyle</h2>
+<!-- BODY -->
+<div class="section-title" id="body">
+<h2>Body Care</h2>
 </div>
 
-<div class="grid">
-
-<div class="card">
-<img src="https://i.pinimg.com/736x/1f/8d/3c/1f8d3c6b3c8c61a8c8cbe3c5b0dca8a0.jpg">
-<p>Fashion</p>
-<a href="#">Shop</a>
-</div>
-
-<div class="card">
-<img src="https://i.pinimg.com/736x/9c/0a/4d/9c0a4df9e5a13a7d0f3bfb79f3a77c6d.jpg">
-<p>Home</p>
-<a href="#">Shop</a>
-</div>
-
-</div>
-
-<!-- KITCHEN -->
-<div class="section-title" id="kitchen">
-<h2>Non-Toxic Kitchen Essentials</h2>
-</div>
-
-<div class="products-grid">
-
-<div class="product-item">
-<img src="https://i.pinimg.com/736x/89/6a/54/896a5429d5f58cb8c61e7a2c9cb9e28d.jpg">
-<p>Glass Storage</p>
-<a href="#">Shop</a>
-</div>
-
-<div class="product-item">
-<img src="https://i.pinimg.com/736x/2c/3d/0a/2c3d0a5f9a4d3b7dfb0a5f8f6e3d2a8a.jpg">
-<p>Wood Boards</p>
-<a href="#">Shop</a>
-</div>
-
-</div>
-
-<!-- FINANCE -->
-<div class="section-title" id="finance">
-<h2>Funky Finance 💸</h2>
-</div>
-
-<div class="disclaimer">
-Finance tools coming soon.
+<!-- HAIR -->
+<div class="section-title" id="hair">
+<h2>Hair Care</h2>
 </div>
 
 <!-- FOOTER -->
