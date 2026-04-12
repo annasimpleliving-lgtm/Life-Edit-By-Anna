@@ -20,8 +20,8 @@ body {
 .nav {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 25px;
+  gap: 25px;
+  padding: 20px;
   font-size: 13px;
 }
 
@@ -33,31 +33,28 @@ body {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 80px 20px 30px;
+  padding: 70px 20px 20px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 46px;
+  font-size: 44px;
   color: #6f5e63;
 }
 
 .hero p {
   color: #9a8c91;
   font-size: 14px;
-  max-width: 500px;
-  margin: auto;
 }
 
 /* SECTION */
 .section-title {
   text-align: center;
-  margin-top: 90px;
+  margin-top: 80px;
 }
 
 .section-title h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 30px;
 }
 
 .section-sub {
@@ -66,11 +63,11 @@ body {
   color: #9c8e93;
 }
 
-/* CATEGORY GRID */
+/* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
   max-width: 1100px;
   margin: auto;
   padding: 20px;
@@ -78,7 +75,7 @@ body {
 
 .card {
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.2s;
 }
 
 .card:hover {
@@ -87,20 +84,16 @@ body {
 
 .card img {
   width: 100%;
-  height: 230px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 18px;
-}
-
-.card p {
-  font-family: 'Playfair Display', serif;
+  border-radius: 16px;
 }
 
 /* PRODUCTS */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  gap: 25px;
   max-width: 1100px;
   margin: auto;
   padding: 20px;
@@ -108,66 +101,52 @@ body {
 
 .product-item {
   text-align: center;
-  padding: 10px;
-  border-radius: 16px;
-  transition: 0.2s;
-}
-
-.product-item:hover {
-  transform: translateY(-4px);
-  background: #faf7f6;
 }
 
 .product-item img {
   width: 100%;
-  height: 170px;
+  height: 160px;
   object-fit: contain;
   background: white;
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 10px;
 }
 
-/* FEATURED FRAGRANCE */
+/* fragrance */
 .fragrance {
   max-width: 260px;
   margin: auto;
 }
 
 .fragrance img {
-  height: 240px;
+  height: 220px;
 }
 
 /* BUTTON */
 a {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
+  margin-top: 8px;
+  padding: 10px 18px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 13px;
-  color: #6f5e63;
-  border: 1px solid #e7dede;
-  background: white;
-}
-
-a:hover {
-  background: #f2e9e6;
+  color: #5a4a4f;
+  border: 1px solid #e5dede;
+  background: #faf8f7;
 }
 
 /* DISCLAIMER */
 .disclaimer {
   text-align: center;
   font-size: 11px;
-  color: #b1a4a8;
-  margin-top: 10px;
+  color: #a89a9e;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
-  padding: 80px;
+  padding: 60px;
   font-size: 12px;
-  color: #a09297;
+  color: #8c7b80;
 }
 
 </style>
@@ -180,9 +159,6 @@ footer {
 <a href="#browse">Browse</a>
 <a href="#makeup">Makeup</a>
 <a href="#fragrance">Fragrance</a>
-<a href="#lifestyle">Lifestyle</a>
-<a href="#kitchen">Kitchen</a>
-<a href="#finance">Finance</a>
 </div>
 
 <!-- HERO -->
@@ -201,25 +177,21 @@ footer {
 <div class="card">
 <img src="https://i.pinimg.com/736x/c6/e6/fb/c6e6fbd4176bb432b31058924eee19f3.jpg">
 <p>Skincare</p>
-<a href="#makeup">Explore</a>
 </div>
 
 <div class="card">
 <img src="https://i.pinimg.com/1200x/13/81/3b/13813bf4c3518c331d6067b348ed8ca7.jpg">
 <p>Makeup</p>
-<a href="#makeup">Explore</a>
 </div>
 
 <div class="card">
 <img src="https://i.pinimg.com/736x/6b/bb/3f/6bbb3f00e52e06e101be61ad4cadf411.jpg">
 <p>Body Care</p>
-<a href="#lifestyle">Explore</a>
 </div>
 
 <div class="card">
-<img src="https://i.pinimg.com/736x/cc/8e/9b/cc8e9bbdbe93c3b0f8a9f2a63f18c21e.jpg">
+<img src="https://i.pinimg.com/736x/0b/ff/a0/0bffa0f434582348e4d68699334709fb.jpg">
 <p>Hair Care</p>
-<a href="#lifestyle">Explore</a>
 </div>
 
 </div>
@@ -292,7 +264,6 @@ Clean beauty + tried & true favorites
 
 </div>
 
-<!-- FOOTER -->
 <footer>
 Follow on Pinterest + TikTok
 </footer>
