@@ -3,7 +3,7 @@
 <head>
 <title>Life Edit by Anna</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 
@@ -12,116 +12,162 @@ html { scroll-behavior: smooth; }
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
-  color: #2b2b2b;
-  background: linear-gradient(180deg, #f8f6f4 0%, #f3eeeb 50%, #f8f6f4 100%);
+  color: #3a3436;
+  background: linear-gradient(180deg, #fdf9f7 0%, #f4eeeb 60%, #fdf9f7 100%);
 }
 
 /* NAV */
 .nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
+  padding: 25px;
   font-size: 13px;
 }
 
-.nav a { text-decoration: none; color: #6b5c61; }
+.nav a {
+  text-decoration: none;
+  color: #7c6f74;
+}
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 50px 20px 20px;
+  padding: 80px 20px 30px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
+  font-size: 46px;
+  color: #6f5e63;
 }
 
-.hero p { color: #8a7c80; }
+.hero p {
+  color: #9a8c91;
+  font-size: 14px;
+  max-width: 500px;
+  margin: auto;
+}
 
 /* SECTION */
 .section-title {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 .section-title h2 {
   font-family: 'Playfair Display', serif;
+  font-size: 30px;
 }
 
 .section-sub {
   text-align: center;
   font-size: 13px;
-  color: #8a7c80;
+  color: #9c8e93;
 }
 
-/* GRID */
+/* CATEGORY GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
   max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
 
+.card {
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
 .card img {
   width: 100%;
-  height: 220px;
+  height: 230px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 18px;
+}
+
+.card p {
+  font-family: 'Playfair Display', serif;
 }
 
 /* PRODUCTS */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
   max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
 
+.product-item {
+  text-align: center;
+  padding: 10px;
+  border-radius: 16px;
+  transition: 0.2s;
+}
+
+.product-item:hover {
+  transform: translateY(-4px);
+  background: #faf7f6;
+}
+
 .product-item img {
   width: 100%;
-  height: 160px;
+  height: 170px;
   object-fit: contain;
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 10px;
 }
 
-.product-item { text-align: center; }
+/* FEATURED FRAGRANCE */
+.fragrance {
+  max-width: 260px;
+  margin: auto;
+}
 
-.fragrance img { height: 220px; }
+.fragrance img {
+  height: 240px;
+}
 
 /* BUTTON */
 a {
   display: inline-block;
-  margin-top: 8px;
-  padding: 10px 18px;
+  margin-top: 10px;
+  padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 13px;
-  color: #5a4a4f;
-  border: 1px solid #e5dede;
-  background: #faf8f7;
+  color: #6f5e63;
+  border: 1px solid #e7dede;
+  background: white;
+}
+
+a:hover {
+  background: #f2e9e6;
 }
 
 /* DISCLAIMER */
 .disclaimer {
   text-align: center;
   font-size: 11px;
-  color: #a89a9e;
+  color: #b1a4a8;
+  margin-top: 10px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 60px;
+  padding: 80px;
   font-size: 12px;
-  color: #8c7b80;
+  color: #a09297;
 }
 
 </style>
@@ -133,8 +179,6 @@ footer {
 <div class="nav">
 <a href="#browse">Browse</a>
 <a href="#makeup">Makeup</a>
-<a href="#body">Body</a>
-<a href="#hair">Hair</a>
 <a href="#fragrance">Fragrance</a>
 <a href="#lifestyle">Lifestyle</a>
 <a href="#kitchen">Kitchen</a>
@@ -144,7 +188,7 @@ footer {
 <!-- HERO -->
 <div class="hero">
 <h1>Life Edit by Anna ✨</h1>
-<p>Clean beauty, real results, and curated essentials for an elevated everyday routine.</p>
+<p>Curated clean beauty, elevated routines, and everyday essentials.</p>
 </div>
 
 <!-- BROWSE -->
@@ -157,7 +201,7 @@ footer {
 <div class="card">
 <img src="https://i.pinimg.com/736x/c6/e6/fb/c6e6fbd4176bb432b31058924eee19f3.jpg">
 <p>Skincare</p>
-<a href="#">Explore</a>
+<a href="#makeup">Explore</a>
 </div>
 
 <div class="card">
@@ -169,13 +213,13 @@ footer {
 <div class="card">
 <img src="https://i.pinimg.com/736x/6b/bb/3f/6bbb3f00e52e06e101be61ad4cadf411.jpg">
 <p>Body Care</p>
-<a href="#body">Explore</a>
+<a href="#lifestyle">Explore</a>
 </div>
 
 <div class="card">
 <img src="https://i.pinimg.com/736x/cc/8e/9b/cc8e9bbdbe93c3b0f8a9f2a63f18c21e.jpg">
-<p>Hair</p>
-<a href="#hair">Explore</a>
+<p>Hair Care</p>
+<a href="#lifestyle">Explore</a>
 </div>
 
 </div>
@@ -188,7 +232,7 @@ footer {
 </div>
 
 <div class="section-sub">
-Clean beauty and tried-and-true favorites curated intentionally.
+Clean beauty + tried & true favorites
 </div>
 
 <!-- CLEAN -->
@@ -239,21 +283,13 @@ Clean beauty and tried-and-true favorites curated intentionally.
 </div>
 
 <div class="products-grid">
+
 <div class="product-item fragrance">
 <img src="https://i.pinimg.com/736x/6c/06/f7/6c06f7d73d516f9b1faa8c3c21a9da3a.jpg">
 <p>Chanel Chance Eau Vive</p>
 <a href="https://amzn.to/4eh4XRL">Shop</a>
 </div>
-</div>
 
-<!-- BODY -->
-<div class="section-title" id="body">
-<h2>Body Care</h2>
-</div>
-
-<!-- HAIR -->
-<div class="section-title" id="hair">
-<h2>Hair Care</h2>
 </div>
 
 <!-- FOOTER -->
