@@ -25,21 +25,17 @@ body {
   font-size: 13px;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #7c6f74;
-}
-
 /* HERO */
 .hero {
   text-align: center;
-  padding: 70px 20px 20px;
+  padding: 80px 20px 30px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 44px;
-  color: #6f5e63;
+  font-size: 46px;
+  color: #8a6f75;
+  letter-spacing: 1px;
 }
 
 .hero p {
@@ -47,7 +43,7 @@ body {
   font-size: 14px;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section-title {
   text-align: center;
   margin-top: 80px;
@@ -59,22 +55,27 @@ body {
 
 .section-sub {
   text-align: center;
-  font-size: 13px;
   color: #9c8e93;
+  font-size: 13px;
 }
 
 /* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 25px;
-  max-width: 1100px;
+.grid, .products-grid {
+  max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
-.card {
-  text-align: center;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+  gap: 25px;
 }
 
 .card img {
@@ -82,20 +83,6 @@ body {
   height: 220px;
   object-fit: cover;
   border-radius: 16px;
-}
-
-/* PRODUCTS */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-}
-
-.product-item {
-  text-align: center;
 }
 
 .product-item img {
@@ -110,23 +97,17 @@ body {
 /* BUTTON */
 a {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 10px;
   padding: 10px 18px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 13px;
-  color: #5a4a4f;
+  color: #6f5e63;
   border: 1px solid #e5dede;
-  background: #faf8f7;
+  background: white;
 }
 
-/* DISCLAIMER */
-.disclaimer {
-  text-align: center;
-  font-size: 11px;
-  color: #a89a9e;
-}
-
+/* FOOTER */
 footer {
   text-align: center;
   padding: 60px;
@@ -139,15 +120,6 @@ footer {
 
 <body>
 
-<!-- NAV -->
-<div class="nav">
-<a href="#browse">Browse</a>
-<a href="#makeup">Makeup</a>
-<a href="#lifestyle">Lifestyle</a>
-<a href="#kitchen">Kitchen</a>
-<a href="#finance">Finance</a>
-</div>
-
 <!-- HERO -->
 <div class="hero">
 <h1>Life Edit by Anna ✨</h1>
@@ -155,7 +127,7 @@ footer {
 </div>
 
 <!-- BROWSE -->
-<div class="section-title" id="browse">
+<div class="section-title">
 <h2>Browse</h2>
 </div>
 
@@ -187,8 +159,6 @@ footer {
 
 </div>
 
-<div class="disclaimer">As an Amazon Associate, I earn from qualifying purchases.</div>
-
 <!-- MAKEUP -->
 <div class="section-title" id="makeup">
 <h2>Makeup</h2>
@@ -198,46 +168,24 @@ footer {
 Clean beauty + tried & true favorites
 </div>
 
-<!-- CLEAN -->
-<div class="section-title">
-<h2>Clean Beauty</h2>
-</div>
+<h3 style="text-align:center;font-family:Playfair Display;">Clean Beauty</h3>
 
 <div class="products-grid">
-
 <div class="product-item">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
 <p>Ilia Lip Crayon</p>
 <a href="https://amzn.to/4sudgNB">Shop</a>
 </div>
-
-<div class="product-item">
-<img src="https://m.media-amazon.com/images/I/615uljkhrkL._AC_UF350.jpg">
-<p>Ilia Complexion Stick</p>
-<a href="https://amzn.to/3QwXrZ4">Shop</a>
 </div>
 
-</div>
-
-<!-- TRIED -->
-<div class="section-title">
-<h2>Tried & True</h2>
-</div>
+<h3 style="text-align:center;font-family:Playfair Display;">Tried & True</h3>
 
 <div class="products-grid">
-
 <div class="product-item">
 <img src="https://m.media-amazon.com/images/I/41zfRk44tNL._SY300_.jpg">
 <p>Saie Bronzer</p>
 <a href="https://amzn.to/41sMCtq">Shop</a>
 </div>
-
-<div class="product-item">
-<img src="https://m.media-amazon.com/images/I/41NkDGQX3-L._SY300_.jpg">
-<p>Saie Glowy Gel</p>
-<a href="https://amzn.to/4t7vd5O">Shop</a>
-</div>
-
 </div>
 
 <!-- FRAGRANCE -->
@@ -246,52 +194,16 @@ Clean beauty + tried & true favorites
 </div>
 
 <div class="products-grid">
-
 <div class="product-item">
 <img src="https://i.pinimg.com/736x/6a/6b/67/6a6b6755272e73606dfe88ae2a15e48c.jpg">
 <p>Signature Scent</p>
 <a href="https://amzn.to/4eh4XRL">Shop</a>
 </div>
-
 </div>
 
-<!-- LIFESTYLE -->
-<div class="section-title" id="lifestyle">
-<h2>Lifestyle</h2>
-</div>
-
-<div class="grid">
-<div class="card"><p>Fashion, Home & Daily Essentials</p></div>
-</div>
-
-<!-- KITCHEN -->
-<div class="section-title" id="kitchen">
-<h2>Non-Toxic Kitchen</h2>
-</div>
-
-<div class="grid">
-<div class="card"><p>Clean swaps for everyday cooking</p></div>
-</div>
-
-<!-- AMAZON -->
-<div class="section-title">
-<h2>Shop My Amazon Storefront</h2>
-</div>
-
-<div style="text-align:center;">
-<a href="#">Visit Storefront</a>
-</div>
-
-<!-- FINANCE -->
-<div class="section-title" id="finance">
-<h2>Funky Finance 💸</h2>
-</div>
-
-<div class="section-sub">
-Smart money tools for modern women
-</div>
-
+<!-- FOOTER -->
 <footer>
+As an Amazon Associate, I earn from qualifying purchases.<br>
 Follow on Pinterest + TikTok
 </footer>
 
