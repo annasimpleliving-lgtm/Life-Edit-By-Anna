@@ -1,207 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Life Edit by Anna</title>
+  <title>Life Edit by Anna</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f8f4f2;
+      color: #3a3436;
+      text-align: center;
+    }
 
-html { scroll-behavior: smooth; }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
 
-body {
-  font-family: 'Inter', sans-serif;
-  margin: 0;
-  color: #3a3436;
-  background: linear-gradient(180deg, #fdf9f7 0%, #f4eeeb 60%, #fdf9f7 100%);
-}
+    h1 {
+      font-size: 42px;
+      color: #8a6f75;
+      margin-top: 60px;
+    }
 
-/* NAV */
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 20px;
-  font-size: 13px;
-}
+    p {
+      color: #8c7b80;
+      font-size: 14px;
+    }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 80px 20px 30px;
-}
+    .section {
+      margin-top: 60px;
+    }
 
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 46px;
-  color: #8a6f75;
-  letter-spacing: 1px;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
 
-.hero p {
-  color: #9a8c91;
-  font-size: 14px;
-}
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
 
-/* SECTIONS */
-.section-title {
-  text-align: center;
-  margin-top: 80px;
-}
+    .product img {
+      width: 100%;
+      height: 140px;
+      object-fit: contain;
+      background: white;
+      border-radius: 10px;
+      padding: 10px;
+    }
 
-.section-title h2 {
-  font-family: 'Playfair Display', serif;
-}
+    a {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      text-decoration: none;
+      color: #6f5e63;
+      font-size: 13px;
+      background: white;
+    }
 
-.section-sub {
-  text-align: center;
-  color: #9c8e93;
-  font-size: 13px;
-}
+    footer {
+      margin-top: 80px;
+      font-size: 12px;
+      color: #999;
+      padding: 20px;
+    }
 
-/* GRID */
-.grid, .products-grid {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 25px;
-}
-
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
-  gap: 25px;
-}
-
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 16px;
-}
-
-.product-item img {
-  width: 100%;
-  height: 160px;
-  object-fit: contain;
-  background: white;
-  border-radius: 12px;
-  padding: 10px;
-}
-
-/* BUTTON */
-a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 13px;
-  color: #6f5e63;
-  border: 1px solid #e5dede;
-  background: white;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 60px;
-  font-size: 12px;
-  color: #8c7b80;
-}
-
-</style>
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
 <h1>Life Edit by Anna ✨</h1>
 <p>Curated clean beauty, elevated routines, and everyday essentials.</p>
-</div>
 
 <!-- BROWSE -->
-<div class="section-title">
-<h2>Browse</h2>
-</div>
+<div class="section">
+  <h2>Browse</h2>
 
-<div class="grid">
+  <div class="grid">
 
-<div class="card">
-<img src="https://i.pinimg.com/736x/c6/e6/fb/c6e6fbd4176bb432b31058924eee19f3.jpg">
-<p>Skincare</p>
-<a href="#makeup">Shop</a>
-</div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/c6/e6/fb/c6e6fbd4176bb432b31058924eee19f3.jpg">
+      <p>Skincare</p>
+      <a href="#makeup">Shop</a>
+    </div>
 
-<div class="card">
-<img src="https://i.pinimg.com/1200x/13/81/3b/13813bf4c3518c331d6067b348ed8ca7.jpg">
-<p>Makeup</p>
-<a href="#makeup">Shop</a>
-</div>
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/13/81/3b/13813bf4c3518c331d6067b348ed8ca7.jpg">
+      <p>Makeup</p>
+      <a href="#makeup">Shop</a>
+    </div>
 
-<div class="card">
-<img src="https://i.pinimg.com/736x/6b/bb/3f/6bbb3f00e52e06e101be61ad4cadf411.jpg">
-<p>Body Care</p>
-<a href="#lifestyle">Shop</a>
-</div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/6b/bb/3f/6bbb3f00e52e06e101be61ad4cadf411.jpg">
+      <p>Body Care</p>
+      <a href="#lifestyle">Shop</a>
+    </div>
 
-<div class="card">
-<img src="https://i.pinimg.com/736x/0b/ff/a0/0bffa0f434582348e4d68699334709fb.jpg">
-<p>Hair Care</p>
-<a href="#lifestyle">Shop</a>
-</div>
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/0b/ff/a0/0bffa0f434582348e4d68699334709fb.jpg">
+      <p>Hair Care</p>
+      <a href="#lifestyle">Shop</a>
+    </div>
 
+  </div>
 </div>
 
 <!-- MAKEUP -->
-<div class="section-title" id="makeup">
-<h2>Makeup</h2>
-</div>
+<div class="section" id="makeup">
+  <h2>Makeup</h2>
+  <p>Clean beauty + tried & true favorites</p>
 
-<div class="section-sub">
-Clean beauty + tried & true favorites
-</div>
+  <h3>Clean Beauty</h3>
 
-<h3 style="text-align:center;font-family:Playfair Display;">Clean Beauty</h3>
+  <div class="grid">
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
+      <p>Ilia Lip Crayon</p>
+      <a href="https://amzn.to/4sudgNB">Shop</a>
+    </div>
+  </div>
 
-<div class="products-grid">
-<div class="product-item">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIobSInbRQ2H-QNXBFYlefvAXIIPaLt_RTEw&s">
-<p>Ilia Lip Crayon</p>
-<a href="https://amzn.to/4sudgNB">Shop</a>
-</div>
-</div>
+  <h3>Tried & True</h3>
 
-<h3 style="text-align:center;font-family:Playfair Display;">Tried & True</h3>
+  <div class="grid">
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/41zfRk44tNL._SY300_.jpg">
+      <p>Saie Bronzer</p>
+      <a href="https://amzn.to/41sMCtq">Shop</a>
+    </div>
+  </div>
 
-<div class="products-grid">
-<div class="product-item">
-<img src="https://m.media-amazon.com/images/I/41zfRk44tNL._SY300_.jpg">
-<p>Saie Bronzer</p>
-<a href="https://amzn.to/41sMCtq">Shop</a>
-</div>
 </div>
 
 <!-- FRAGRANCE -->
-<div class="section-title">
-<h2>Fragrance</h2>
+<div class="section">
+  <h2>Fragrance</h2>
+
+  <div class="grid">
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/6a/6b/67/6a6b6755272e73606dfe88ae2a15e48c.jpg">
+      <p>Signature Scent</p>
+      <a href="https://amzn.to/4eh4XRL">Shop</a>
+    </div>
+  </div>
 </div>
 
-<div class="products-grid">
-<div class="product-item">
-<img src="https://i.pinimg.com/736x/6a/6b/67/6a6b6755272e73606dfe88ae2a15e48c.jpg">
-<p>Signature Scent</p>
-<a href="https://amzn.to/4eh4XRL">Shop</a>
-</div>
-</div>
-
-<!-- FOOTER -->
 <footer>
 As an Amazon Associate, I earn from qualifying purchases.<br>
 Follow on Pinterest + TikTok
